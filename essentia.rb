@@ -1,7 +1,7 @@
 class Essentia < Formula
   desc "Library for audio analysis and audio-based music information retrieval"
   homepage "http://essentia.upf.edu"
-  head 'https://github.com/Joanna1212/homebrew-essentia.git'
+  head 'https://github.com/MTG/essentia.git'
 
   include Language::Python::Virtualenv
 
@@ -17,7 +17,7 @@ class Essentia < Formula
   depends_on "gaia" => :optional
   depends_on "tensorflow" => :optional
 
-  option "without-python", "Build without Python 3.8 support"
+ # option "without-python", "Build without Python 3.8 support"
 
 #  depends_on "python@3.8" if build.with? "python"
   depends_on "numpy" if build.with? "python"
